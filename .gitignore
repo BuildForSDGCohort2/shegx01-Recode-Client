@@ -24,3 +24,4 @@ yarn-error.log*
 /.idea
 /.vscode
 /.directory
+/src/tailwind.global.css
