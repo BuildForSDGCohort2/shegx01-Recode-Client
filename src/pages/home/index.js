@@ -18,15 +18,25 @@ export default function Index () {
     ]
   }
   return (
-    <div className='flex w-screen h-full px-4'>
+    <div className='flex h-full'>
       <div
-        className='border-r border-grey2 w-64'
+        className='border-r border-grey2 w-64 bg-grey1'
       >
-        <SidebarCard sidebarCardContent={newestVideos} />
-        <SidebarCard sidebarCardContent={newestVideos} />
-        <SidebarCard sidebarCardContent={newestVideos} />
+        <div className='border-b border-grey3'>
+          <SidebarCard sidebarCardContent={newestVideos} />
+        </div>
+        <div className='border-b border-grey3'>
+          <SidebarCard sidebarCardContent={newestVideos} isSupportCard={true} />
+        </div>
+        <div>
+          <SidebarCard sidebarCardContent={newestVideos} isSupportCard={true} />
+        </div>
       </div>
-      <div className='w-full'>right as content</div>
+      <div className='w-full'>
+        <div className='pt-8 px-5 flex'>
+          <h3 className='text-fg1 font-bold text-base capitalize'>featured videos</h3>
+        </div>
+      </div>
     </div>
   )
 }

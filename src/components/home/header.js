@@ -1,5 +1,6 @@
 import React from 'react'
 import Notification from './Notification'
+import UserBadge from './UserBadge'
 
 export default function Header () {
   return (
@@ -33,8 +34,8 @@ export default function Header () {
               <path d='M21 21l-4.35-4.35' stroke='#B4B6BB'/>
             </svg>
             <input
-              className='bg-grey outline-none focus:shadow-outline py-2 pl-8
-              placeholder-grey4 text-xs text-white w-64'
+              className='bg-grey outline-none focus:border-fg focus:bg-grey py-2 pl-8
+              placeholder-grey4 text-xs text-white w-64 focus:placeholder-fg'
               type='text' placeholder='Search Videos Channels or Users'
             />
           </div>
@@ -52,8 +53,8 @@ export default function Header () {
 
           </button>
           <button
-            className='ml-2 flex items-center justify-center
-            relative focus:outline-none'
+            className='ml-2 flex items-center
+           focus:outline-none'
           >
             <Notification/>
           </button>
@@ -69,15 +70,7 @@ export default function Header () {
           >
             login
           </button>
-          <button
-            className='ml-2 flex items-center w-8 h-8
-            rounded-full overflow-hidden border border-grey2 focus:outline-none focus:border-grey3'
-          >
-            <img
-              src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=60&q=60'
-              alt='profile pic'
-            />
-          </button>
+          <UserBadge />
         </div>
       </div>
     </div>

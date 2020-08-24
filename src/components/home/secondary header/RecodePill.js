@@ -1,10 +1,15 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
 export default function RecodePill (props) {
   const { pillName } = props
   return (
-    <h4 className='px-1 py-px ml-2 border border-grey3 capitalize text-fg1 bg-grey2 text-xs whitespace-no-wrap'>
+    <button className='px-2 py-px ml-2 border border-grey3 capitalize
+    text-fg1 bg-grey2 text-xs whitespace-no-wrap rounded-sm focus:outline-none hover:bg-grey'>
       {pillName}
-    </h4>
+    </button>
   )
+}
+
+RecodePill.propTypes = {
+  pillName: PropTypes.string.isRequired
 }

@@ -9,7 +9,7 @@ export default function Trending () {
   return (
     <div className='flex overflow-x-auto'>
       <h2
-        className='uppercase font-bold text-xs text-grey4 whitespace-no-wrap'
+        className='uppercase font-bold text-xs text-grey4 whitespace-no-wrap flex items-center'
       >trending searches
       </h2>
       {/* overflow can be scrolled */}
