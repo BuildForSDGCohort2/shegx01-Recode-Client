@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function UserBadge () {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,12 +21,26 @@ export default function UserBadge () {
         </div>
         {
           isOpen
-            ? <div className='absolute right-0 top-10 bg-fg1 text-grey mt-3 rounded-b-sm shadow-lg border border-bg'>
-              <ul className='py-2'>
-                <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>subscriptions</li>
-                <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>likes</li>
-                <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>history</li>
-                <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>channels</li>
+            ? <div className='absolute right-0 top-10 bg-fg1 text-grey mt-3 rounded-b-sm shadow-lg'>
+              <ul className='py-2 flex flex-col'>
+                <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>
+                  <Link to='subscriptions'>subscriptions</Link>
+                </li>
+                <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>
+                  <Link to='likes'>likes</Link>
+                </li>
+                <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>
+                  <Link to='/history'>history</Link>
+                </li>
+                <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>
+                  <Link to='/channels'>channels</Link>
+                </li>
+                <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>
+                  <Link to='/uploads'>uploads</Link>
+                </li>
+                <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>
+                  <Link to='/upload'>upload</Link>
+                </li>
                 <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>log out</li>
               </ul>
             </div> : null

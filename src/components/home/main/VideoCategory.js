@@ -22,7 +22,7 @@ export default function VideoCategory ({ categoryName }) {
   }
   return (
     <div className='pt-8 px-2 flex flex-col'>
-      <h2 className='text-fg1 font-bold text-base capitalize'>{categoryName}</h2>
+      <h2 className='text-fg1 font-bold text-base capitalize ml-2'>{categoryName}</h2>
       <div className='flex justify-between'>
         <div className='mt-4 w-1/4 mx-2'>
           <VideoCard videoCardData={cardData} />

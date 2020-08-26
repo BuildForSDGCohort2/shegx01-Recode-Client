@@ -25,6 +25,7 @@ export default function VideoCard ({ videoCardData }) {
               <img
                 className='object-cover'
                 src={userAvatar}
+                alt='user avatar'
               />
             </div>
           </div>
@@ -48,7 +49,7 @@ export default function VideoCard ({ videoCardData }) {
           <span>Uploaded {uploadedAt} Updated {updatedAt}</span>
         </div>
         <div className='mt-4 flex bg-grey2 px-2 py-2'>
-          <a className='text-link text-xxs' href={hostingLink} target='_blank' rel='noreferrer'>Source code hosted on {hostingProvider}</a>
+          <a className='text-link text-xxs' href={hostingLink} target='_blank' rel='noopener noreferrer'>Source code hosted on {hostingProvider}</a>
           <div className='flex ml-auto items-center'>
             <div>
               <svg
@@ -66,12 +67,5 @@ export default function VideoCard ({ videoCardData }) {
 }
 
 VideoCard.propTypes = {
-  'videoData.videoTitle': PropTypes.string.isRequired,
-  'videoData.videoSource': PropTypes.string.isRequired,
-  'videoData.userAvatar': PropTypes.string.isRequired,
-  'videoData.name': PropTypes.string.isRequired,
-  'videoData.userRoleTile': PropTypes.string.isRequired,
-  'videoData.uploadedAt': PropTypes.string.isRequired,
-  'videoData.updatedAt': PropTypes.string.isRequired,
-  'videoData.codeHosting': PropTypes.object.isRequired
+  videoCardData: PropTypes.object.isRequired
 }
