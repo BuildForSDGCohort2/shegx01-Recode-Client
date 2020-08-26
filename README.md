@@ -1,5 +1,7 @@
 ## RECODE PROJECT
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/af72ec683b4f451ab7567b1fa386e9b0)](https://app.codacy.com/gh/BuildForSDGCohort2/shegx01-Recode-Client?utm_source=github.com&utm_medium=referral&utm_content=BuildForSDGCohort2/shegx01-Recode-Client&utm_campaign=Badge_Grade_Settings)
+
 ### The problem
 
 Most of the time when we have little issue with our project, <br/>
