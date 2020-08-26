@@ -7,7 +7,7 @@ export default function SecondaryHeader () {
       className='bg-grey1 border-t border-grey2 pl-4
       h-12 flex items-center'
     >
-      <Trending pillName='javascript'/>
+      <Trending pillName='javascript' />
     </div>
   )
 }

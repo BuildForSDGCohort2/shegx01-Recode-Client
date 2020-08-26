@@ -5,7 +5,8 @@ export default function SidebarCard (props) {
   const { sidebarCardContent, isSupportCard } = props
   return (
     <div className={isSupportCard ? ' pt-4 pb-4 '
-      : 'pt-8 pb-4'}>
+      : 'pt-8 pb-4'}
+    >
       <h2 className='font-bold text-sm text-grey4 uppercase pb-2 ml-4'>
         {sidebarCardContent.title}
       </h2>

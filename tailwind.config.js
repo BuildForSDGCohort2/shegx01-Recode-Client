@@ -5,6 +5,9 @@ module.exports = {
     'public/**/*.html'
   ],
   theme: {
+    fontSize: {
+      xxs: '10px'
+    },
     extend: {
       spacing: {
         72: '18rem',
