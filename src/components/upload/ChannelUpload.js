@@ -31,7 +31,7 @@ export default function ChannelUpload () {
           {
             [...Array(formCount)].map((_, idx) => (
               <div key={idx} className='mt-6'>
-                <h4 className='py-4 text-fg1 text-xxs tracking-wider uppercase font-bold'>video upload</h4>
+                <h4 className='py-4 text-fg1 text-xxs tracking-wider uppercase font-bold'>video upload {idx + 1}</h4>
                 <FormData />
               </div>
             ))
@@ -44,7 +44,7 @@ export default function ChannelUpload () {
             <button
               onClick={handleFormCountUpdate}
               className='ml-auto font-bold text-xxs uppercase focus:outline-none
-              focus:bg-grey-2 focus:text-fg flex items-center'
+              focus:bg-grey-2 focus:text-fg flex items-center border border-grey3 px-1 text-fg1'
             >
               <span className='font-normal pr-1 text-lg'>
                 +
