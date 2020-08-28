@@ -12,7 +12,8 @@ export default function UploadVideoPage () {
           <div className='flex justify-between w-full'>
             <h2 className='text-fg1 capitalize font-bold'>{
               channelUploadType ? 'channels upload form' : 'Video upload form'
-            }</h2>
+            }
+            </h2>
             <button onClick={toggleUploadType} className='text-link underline focus:outline-none hover:text-white'>change to channels</button>
           </div>
         </div>

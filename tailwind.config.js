@@ -5,14 +5,14 @@ module.exports = {
     'public/**/*.html'
   ],
   theme: {
-    fontSize: {
-      xxs: '10px'
-    },
     extend: {
       spacing: {
         72: '18rem',
         84: '21rem',
         96: '24rem'
+      },
+      fontSize: {
+        xxs: '10px'
       }
     },
     fontFamily: {
