@@ -30,9 +30,6 @@ export default function UserBadge () {
                   <Link to='likes'>likes</Link>
                 </li>
                 <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>
-                  <Link to='/history'>history</Link>
-                </li>
-                <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>
                   <Link to='/channels'>channels</Link>
                 </li>
                 <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>
