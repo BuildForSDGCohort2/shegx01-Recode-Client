@@ -10,7 +10,7 @@ import UploadsPage from './pages/uploads'
 import ChannelsPage from './pages/channels'
 import LikesPage from './pages/likes'
 import SubscriptionPage from './pages/subscriptions'
-import ErrorPage from './pages/error/ErrorPage'
+import NotFound from './pages/notfound'
 
 function App () {
   return (
@@ -36,7 +36,7 @@ function App () {
           <SubscriptionPage />
         </Route>
         <Route>
-          <ErrorPage />
+          <NotFound />
         </Route>
       </Switch>
     </Router>

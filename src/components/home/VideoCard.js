@@ -5,7 +5,7 @@ export default function VideoCard ({ videoCardData }) {
   const { videoTitle, videoSource, userAvatar, name, userRoleTitle, uploadedAt, updatedAt, codeHosting, videoTags } = videoCardData
   const { hostingLink, hostingProvider, hostingStarCount } = codeHosting
   return (
-    <div className='rounded-sm overflow-hidden border border-grey2'>
+    <div className='rounded-sm overflow-hidden border border-grey2 mx-2'>
       <div>
         <img
           className='h-48 w-full object-cover'
