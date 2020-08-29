@@ -8,7 +8,6 @@ import SecondaryHeader from './components/home/SecondaryHeader'
 import UploadVideoPage from './pages/upload'
 import UploadsPage from './pages/uploads'
 import ChannelsPage from './pages/channels'
-import LikesPage from './pages/likes'
 import SubscriptionPage from './pages/subscriptions'
 import NotFound from './pages/notfound'
 
@@ -28,9 +27,6 @@ function App () {
         </Route>
         <Route path='/channels'>
           <ChannelsPage />
-        </Route>
-        <Route path='/likes'>
-          <LikesPage />
         </Route>
         <Route path='/subscriptions'>
           <SubscriptionPage />

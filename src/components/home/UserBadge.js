@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useClickAway } from 'use-click-away'
 
 export default function UserBadge () {
   const [isOpen, setIsOpen] = useState(false)
+  const navRef = useRef(null)
+  useClickAway(navRef, () => setIsOpen(false))
   const handleIsOpen = (_e) => {
     setIsOpen(isOpen => !isOpen)
   }
@@ -20,17 +23,14 @@ export default function UserBadge () {
           />
         </div>
         {
-          isOpen
-            ? <div className='absolute right-0 top-10 bg-fg1 text-grey mt-3 rounded-b-sm shadow-lg'>
-              <ul className='py-2 flex flex-col'>
-                <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>
-                  <Link to='subscriptions'>subscriptions</Link>
+          isOpen &&
+            <div className='absolute right-0 top-10 bg-fg1 text-grey mt-3 rounded-b-sm shadow-lg' ref={navRef}>
+              <ul className='py-2 flex flex-col '>
+                <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize '>
+                  <Link to='subscriptions'>your subscriptions</Link>
                 </li>
                 <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>
-                  <Link to='likes'>likes</Link>
-                </li>
-                <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>
-                  <Link to='/channels'>channels</Link>
+                  <Link to='/channels'>your channels</Link>
                 </li>
                 <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>
                   <Link to='/uploads'>uploads</Link>
@@ -40,12 +40,9 @@ export default function UserBadge () {
                 </li>
                 <li className='px-2 py-1 hover:bg-grey2 hover:text-fg1 capitalize'>log out</li>
               </ul>
-            </div> : null
+            </div>
         }
       </button>
-      {/* render with portal later */}
-      {/* <span className={isOpen ? 'w-screen h-screen bg-grey1 absolute pin-y' : 'hidden'}> */}
-      {/* </span> */}
     </>
 
   )

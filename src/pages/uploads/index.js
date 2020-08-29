@@ -1,6 +1,5 @@
 import React from 'react'
 import DefaultLayout from '../../layout/DefaultLayout'
-import VideoCard from '../../components/home/VideoCard'
 
 export default function UploadsPage () {
   return (
